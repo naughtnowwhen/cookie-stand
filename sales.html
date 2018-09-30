@@ -8,8 +8,32 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
+    <div align="center">
     <h1>Pat's Sales Figures</h1>
-    <h2 id = 'stores'></h1>
+
+    <img src="./salmon.png" vspace="50" height="200" width="550">
+
+    <form id = 'forms'>
+        <fieldset>
+            <legend>New Location Input</legend>
+            Location:
+            <input type="text" name="name" value="">
+            Minimum Customers:
+            <input type="number" step="0.1" name="minCust" value="">
+            Maximum Customers:
+            <input type="number" step="0.1" name="maxCust" value="">
+            Average Cookies Sold:
+            <input type="number" step="0.1" name="avgCookiePerSale" value="">
+            <br>
+            <input type="submit" value="Submit">
+            <button type="reset" value="Reset">Reset</button>
+        </fieldset>  
+    </form> 
+
+    <section id='stores'></section>
+    <table id='store-table'></table>
+
+    </div>
     <script src= main.js></script>
 </body>
 </html>
